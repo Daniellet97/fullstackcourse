@@ -1,0 +1,28 @@
+body{
+    background-color: #3CBC8D;
+}
+h1{color: pink;
+    font-size: 40px;
+}
+.form{
+  color: rgb(111, 49, 226);
+  font-weight: bold;
+    border: 3px solid;
+    padding: 0px;
+    box-shadow: 5px 10px;
+}
+.form_text_filed{
+  color: rgb(224, 86, 201);
+  background-color: rgba(243, 231, 119, 0.973);
+  font-size: 24px;
+    border: 3px solid;
+    padding: 0px;
+    box-shadow: 5px 10px;
+}
+#send_button{
+  border-radius: 30px;
+  width: 270px;
+  height: 40px;
+  background-color: teal;
+  color: white;
+}

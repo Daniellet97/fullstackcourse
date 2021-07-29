@@ -1,0 +1,70 @@
+<html>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="style.css" rel="stylesheet">
+        <title>Document</title>
+    </head>
+    <body>
+        <section>
+            <div>
+                <h1>Danielle Form</h1>
+                <form method="get">
+                    <div class="form_text_filed">
+                    <fieldset>
+                        <label for="first_name">First name</label>
+                        <input type="text" name="first_name">
+                    </fieldset>
+                    </div>
+                    <div class="form_text_filed">
+                        <fieldset>
+                        <label for="last_name">Last name</label>
+                        <input type="text" name="last name">
+                    </fieldset>
+                    </div>
+                    <div class="form">
+                    <fieldset>
+                        <label for="email">Email</label>
+                        <input type="email" name="email"size="64" maxLength="64" required
+                        placeholder="username@address.com" pattern=".+@address\.com"
+                        title="Please enter a valid email address"> 
+                    </fieldset>
+                    </div>
+                    <div class="form">
+                    <fieldset>
+                        <label for="id">ID</label>
+                        <input type="number" name="id" maxlength="9">
+                    </fieldset>
+                    </div>
+                    <div class="form">
+                    <fieldset>
+                        <label for="gender">Gender:</label>
+                        <input type="radio" name="gender">
+                        <label for="female">Female</label>
+                         <input type="radio" name="gender">
+                        <label for="male">Male:</label>
+                        <input type="radio" name="gender"> 
+                        <label for="Other">Other</label>
+                        </fieldset>
+                        </div>
+                        <div class="form_text_filed">
+                        <fieldset>
+                            <label for="text">Text</label><br>
+                            <textarea type="test" name="text" cols="80" rows="8" required
+                            placeholder="Please enter message"></textarea>
+                        </fieldset>
+                        </div>
+                        <div>
+                        <fieldset>
+                            <button id="send_button" type="submit">Send</button>
+                        </fieldset>
+                        </div>
+                </form>
+            </div>
+        </section>
+    </body>
+    </html>
+</html>
