@@ -1,0 +1,166 @@
+    .cover{
+            background-image: url('mobile.jpeg');
+            background-repeat: no-repeat;
+            width: 345px;
+            height: 396px;
+            margin: 10px auto;
+        }
+    .covercontent{
+        padding: 28px;
+    }
+    .buttons{
+        display: flex;
+        justify-content: space-between;
+    }    
+        
+    h1{
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 48px;
+    }
+    p{
+        display: none;
+    }
+    button{
+        background-color:#DB4700 ;
+        color: white;
+        width: 128px;
+        height: 50px;
+        padding: 120px 21px;
+        padding: calc(100% - 375px);
+        border-radius: 6%;
+        border: none;
+    }
+    section{
+        padding: calc(100% - 375px);
+    }
+    .shop{
+        padding: calc(100% - 375px);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .item{
+        font-family: 'Courier New', Courier, monospace;
+        color: #000000;        
+        font-size: 14px;
+        text-align: left;
+    }
+    h3{
+        margin: 0%;
+    }
+    .shoptitle{
+        display: none;
+    }
+    .category{
+        color: #A7A7A7;
+        font-size: 10px;
+    }
+    .oldprice{
+        text-decoration-line: line-through;
+        display: inline;
+    }
+    .newprice{
+        color: #DB4700;
+        display: inline; 
+    }
+    .by{
+        color: black;
+        font-size: 10px;
+    }
+    .homedesignimg{
+        width: 158px;
+        height: 159px;
+    }
+    .shopallbtn{
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 14px;
+        color: white;
+        background-color: #DB4700;
+        border-radius: 6px;
+        padding:15px 40px ;
+        margin: 20px;
+        display: inline-block;
+        text-decoration: none;
+    }
+    .shopsection{
+        text-align: center;
+
+    }
+    .by:nth-of-type(2n+1){
+        display: none;
+    }
+    .discover{
+        background-image: url(discover.jpeg);
+        width: 345px;
+        height: 314px;
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 20px;
+        text-align: center;
+        background-repeat: no-repeat;
+        margin: 0 auto;
+        }
+        .textdiscoverbtn{
+            padding-top: 30px;
+        }
+    .suporttext{
+        font-size: 14;
+    }
+    .discoverbtn{
+        border-radius: 6px;
+        color: #DB4700;
+        background-color: white;
+        padding: 15px 40px;
+        display: inline-block;
+        text-decoration: none;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    @media only screen and ( min-width: 1024px){
+        .cover{
+            background-image: url('desktop.jpeg');
+            width: 97vw;
+        }
+        section{
+            padding: calc(100% - 1302px);
+        }
+        button{
+            width: 253px;
+            height: 67px;
+            padding: calc(100% - 1302px);
+        }
+        .buttons{
+            display: flex;
+            justify-content: start;
+            gap: 32px;
+        }
+        p{
+            display: block;
+            color: white;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 14px;
+        }
+        .shoptitle{
+            display: block;
+        }
+        .shop{
+            padding: calc(100% - 1302px);
+       }
+       .by:nth-of-type(2n+1){
+        display: block;
+    }
+    .by:nth-of-type(2n){
+        display: none;
+    }
+       .homedesignimg{
+        width: 280px;
+        height: 250px;
+       }
+       .discover{
+           background-image: url(desktopdiscover.jpeg);
+           width: 1000px;
+           height: 300px;
+       }
+    }
