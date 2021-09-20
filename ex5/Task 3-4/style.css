@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0%;
+}
+header{
+position: fixed;
+top: 0%;
+left: 0%;
+width: 100vw;
+background-color: palevioletred;
+}
+.menu{
+    background-color:palevioletred;
+
+}
+.content{
+    display: none;
+    background-color:palevioletred;
+    animation: open_menu;
+  
+}  
+@keyframes open_menu{
+    0%{
+        display: none;
+    }
+    100%{
+        display: block;
+    }
+}
