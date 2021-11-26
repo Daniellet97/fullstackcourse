@@ -1,3 +1,39 @@
+.code_background{
+position: relative;
+width: 100%;
+height: 100%;
+
+}
+#main:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+}
+.about_me{
+    position : absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif;;
+}
+#text_languages{
+    display: contents;
+}
+#main .check-work{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    font-size: 1rem;
+}
+
 body{
     background-color: black;
     font-family: 'Roboto Slab', serif;
@@ -5,11 +41,11 @@ body{
     margin: 0;
 }
 #main{
-    background-color: purple;
-    padding:1rem;  
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    width: 100vw;
+    height: 100vh;
 }
 #main span{
     display: inline-block;
@@ -43,6 +79,11 @@ h1{
     position: relative;
     border: 3.75rem;
  }
+ h6{
+    color: white;
+    position: relative;
+    border: 3.75rem;
+ }
  header{
      background-color:black;
      position: sticky;
@@ -61,9 +102,38 @@ h1{
     margin: 0 auto;
     font-size: 1.4rem;
 }
+#protfolio{
+    border-bottom:1px solid #f1f1f1;;
+    background: #eeecec;
+    text-align: center;
+    padding: 3.5em 0;
+}
+.protfolio_page{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1600px;
+}
+.protfolio_title{
+    font-size: 1.5em;
+}
+#protfolio h2{
+    font-size: 2.5em;
+    color: black;
+    letter-spacing: 4px;
+    font-weight: bold;
+    margin-bottom: 0.625em;
+    text-transform: uppercase;
+}
+#protfolio p{
+    padding: 0;
+    color:#706f6f;
+    font-size: 1.37em;
+    line-height: 1.5em;
+}
 #myproducts{
-    color: white;
-    padding:1rem;
+    color:rgb(8, 8, 8);
+    text-align: center;
+    background-color: whitesmoke;
 }
 .product{
     display: flex;
@@ -71,6 +141,32 @@ h1{
     gap: 2%;
     margin: 2% 0%;
     flex-direction: column;
+    margin: 0 auto;
+    width: 94%;
+}
+#myproducts h2{
+    font-family: 'Playfair Display', serif;;
+    font-size: 2.17em;
+    color: black;
+}
+#myproducts .product hr{
+    background-color: #c5c5c5;
+    width: 9%;
+    height: 0.0625em;
+    border: none;
+    margin-left: 47%;
+    margin-bottom: 1.5625em;
+}
+#myproducts p{
+    font-family: 'Playfair Display', serif;;
+    font-size: 0.9em;
+    line-height: 1.5em;
+}
+#myproducts .button_learn_more{
+    color: #d24d57;
+    border-color: #d24d57;
+    margin: 1.85em 0 0 10%;
+    width: 80%;
 }
 .productimg{
     width: 15rem;
@@ -90,8 +186,10 @@ fieldset{
 
 @media only screen and (min-width: 1024px){
     #main{
-        background-color: rgb(168, 132, 168);
         flex-direction: row;
+    }
+    .about_me{
+        font-size: 3rem;
     }
     body{
         font-size: 20px;

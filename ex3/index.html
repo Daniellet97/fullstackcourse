@@ -14,6 +14,9 @@
     <link href="style.css" rel="stylesheet">
     <title>Document</title>
     <script src="https://kit.fontawesome.com/a3f899625d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -29,34 +32,30 @@
             <a href="https://web.whatsapp.com/send?phone=+972523230858"><i class="fab fa-whatsapp"></i></a>
         </div>
         <section id="main">
-            <div>
-                <h2>Hi,</h2>
-                <h2>my name is Danielle</h2>
+            <img class="code_background" src="../ex3/codebackground.jpeg" alt="code backround">
+            <div class="about_me">
+                <h2 id="text_languages"></h2>
+                <h2>My name is Danielle</h2>
                 <h1>I'm a Fullstack Developer</h1>
-                <span>Html</span>
-                <span>Css</span>
-                <span>PHP</span>
-                <span>Java script</span><br>
-                <a href="tel:0523230858"><i class="fas fa-phone-square"></i> 052-3230858</a><br>
-                <a href="mailto:daniellet@gmail.com"><i class="fas fa-envelope-open-text"></i>
-                    danielle07t@gmail.com></a><br>
-                <a href="https://www.linkedin.com/in/danielle-trachterman-087755155/"><i class="fab fa-linkedin"></i>
-                    linkedin.com/in/danielle-trachterman</a><br>
-                <p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s,
-                    when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has
-                    survived not only five centuries, but also the leap into electronic typesetting,
-                    remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets
-                    containing Lorem Ipsum passages,
-                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
-                    Ipsum."</p>
+                <h6>Get ready to turn your ideas into reality</h6>
+                <a class="button check-work" href=".product">Check my work</a>
             </div>
-            <img src="me.jpeg" alt="me">
+        </section>
+        <section id="protfolio">
+            <div class="protfolio_page">
+            <h2>PORTFOLIO</h2>
+            <p>
+                Below you can see some projects I've been working on lately. I divide each project into four follow-up
+                areas: comprehensive research, wireframing, design & development. This process allows me to create great
+                product with client goals in mind.
+            </p>
+            </div>
         </section>
         <section id=myproducts>
             <div class="product">
                 <div>
-                    <h2>My product1</h2>
+                    <h2>Memory Game</h2>
+                    <hr> 
                     <p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                         the industry's standard dummy text ever since the 1500s,
                         when an unknown printer took a galley of type and scrambled it to make a type specimen book. It
@@ -66,12 +65,14 @@
                         and more recently with desktop publishing software like Aldus PageMaker including versions of
                         Lorem Ipsum."
                     </p>
+                    <span class="butten_learn_more">Learn More</span>
                 </div>
-                <img class="productimg" src="product1.png" alt="product1">
+                <img class="productimg" src="memorygameimg.png" alt="memorygameimg">
             </div>
             <div class="product">
                 <div>
                     <h2>My product2</h2>
+                    <hr> 
                     <p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                         the industry's standard dummy text ever since the 1500s,
                         when an unknown printer took a galley of type and scrambled it to make a type specimen book. It
@@ -81,12 +82,14 @@
                         and more recently with desktop publishing software like Aldus PageMaker including versions of
                         Lorem Ipsum."
                     </p>
+                    <span class="butten_learn_more">Learn More</span>
                 </div>
-                <img class="productimg"src="product2.png" alt="product2">
+                <img class="productimg" src="product2.png" alt="product2">
             </div>
             <div class="product">
                 <div>
                     <h2>My product3</h2>
+                    <hr> 
                     <p>"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                         the industry's standard dummy text ever since the 1500s,
                         when an unknown printer took a galley of type and scrambled it to make a type specimen book. It
@@ -96,12 +99,26 @@
                         and more recently with desktop publishing software like Aldus PageMaker including versions of
                         Lorem Ipsum."
                     </p>
+                    <span class="butten_learn_more">Learn More</span>
                 </div>
                 <img class="productimg" src="product3.png" alt="product3">
             </div>
-        </section> 
+        </section>
+        <section id="about">
+            <div class="about_me">
+            <span>Html</span>
+            <span>Css</span>
+            <span>PHP</span>
+            <span>Java script</span><br>
+            </div>
+        </section>
     </main>
     <footer>
+        <a href="tel:0523230858"><i class="fas fa-phone-square"></i> 052-3230858</a><br>
+        <a href="mailto:daniellet@gmail.com"><i class="fas fa-envelope-open-text"></i>
+            danielle07t@gmail.com></a><br>
+        <a href="https://www.linkedin.com/in/danielle-trachterman-087755155/"><i class="fab fa-linkedin"></i>
+            linkedin.com/in/danielle-trachterman</a><br>
         <form>
             <fieldset>
                 <input type="text" name="full_name" placeholder="full name">
@@ -114,7 +131,8 @@
             </fieldset>
             <button>Send</button><br>
             &copy;:2021 Danielle Trachterman
-    </footer> 
+    </footer>
+    <script src="static/script/scripts.js"></script>
 </body>
 
 </html>
